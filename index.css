@@ -66,15 +66,17 @@ h2 {
   border-radius: 999px;
 }
 
-.video-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px;
+.video-container {
+    position: relative;
+    width: 85%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.video-card:hover {
-  transform: translateY(-6px) scale(1.01);
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
 }
 
 .featured-project {
@@ -87,10 +89,11 @@ h2 {
 
     padding: 20px;
 
-    border-radius: 16px;
-    background: rgba(30,41,59,.6);
+    border-radius: 18px;
 
-    border: 1px solid rgba(96,165,250,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 
     transition: 0.3s ease;
 }
